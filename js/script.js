@@ -23,7 +23,7 @@ var swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-    pauseOnMouseEnter: true, // 👈 এইটা add করো
+    pauseOnMouseEnter: true,
   },
 
   pagination: {
@@ -44,4 +44,18 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
     },
   },
+});
+
+
+// 🔥 Mobile tap show text (final minimal version)
+document.querySelectorAll(".swiper-slide .group").forEach(card => {
+  card.addEventListener("click", () => {
+    if (window.innerWidth < 768) {
+      const content = card.querySelector(".absolute.bottom-0");
+      content.classList.toggle("opacity-100");
+      content.classList.toggle("translate-y-0");
+      content.classList.toggle("opacity-0");
+      content.classList.toggle("translate-y-16");
+    }
+  });
 });
