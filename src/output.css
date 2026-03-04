@@ -845,6 +845,17 @@
       opacity: 100%;
     }
   }
+  .group-active\:translate-x-0 {
+    &:is(:where(.group):active *) {
+      --tw-translate-x: calc(var(--spacing) * 0);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .group-active\:text-white {
+    &:is(:where(.group):active *) {
+      color: var(--color-white);
+    }
+  }
   .after\:\!text-lg {
     &::after {
       content: var(--tw-content);
