@@ -457,6 +457,22 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-b-\[30px\] {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .rounded-b-\[40px\] {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  .rounded-b-\[50px\] {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  .rounded-b-\[80px\] {
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+  }
   .rounded-b-\[120px\] {
     border-bottom-right-radius: 120px;
     border-bottom-left-radius: 120px;
@@ -1008,6 +1024,18 @@
   .md\:w-\[218px\] {
     @media (width >= 48rem) {
       width: 218px;
+    }
+  }
+  .md\:rounded-b-\[80px\] {
+    @media (width >= 48rem) {
+      border-bottom-right-radius: 80px;
+      border-bottom-left-radius: 80px;
+    }
+  }
+  .md\:rounded-b-\[120px\] {
+    @media (width >= 48rem) {
+      border-bottom-right-radius: 120px;
+      border-bottom-left-radius: 120px;
     }
   }
   .md\:rounded-b-\[180px\] {
