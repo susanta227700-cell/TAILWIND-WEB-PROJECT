@@ -473,9 +473,17 @@
     border-bottom-right-radius: 80px;
     border-bottom-left-radius: 80px;
   }
+  .rounded-b-\[100px\] {
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
   .rounded-b-\[120px\] {
     border-bottom-right-radius: 120px;
     border-bottom-left-radius: 120px;
+  }
+  .rounded-b-\[160px\] {
+    border-bottom-right-radius: 160px;
+    border-bottom-left-radius: 160px;
   }
   .rounded-b-\[230px\] {
     border-bottom-right-radius: 230px;
@@ -1042,6 +1050,12 @@
     @media (width >= 48rem) {
       border-bottom-right-radius: 180px;
       border-bottom-left-radius: 180px;
+    }
+  }
+  .md\:rounded-b-\[200px\] {
+    @media (width >= 48rem) {
+      border-bottom-right-radius: 200px;
+      border-bottom-left-radius: 200px;
     }
   }
   .md\:px-\[28px\] {
