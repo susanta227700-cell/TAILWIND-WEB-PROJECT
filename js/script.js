@@ -58,3 +58,70 @@ document.addEventListener("click", function (e) {
   content.classList.toggle("translate-y-16");
 
 });
+
+
+
+
+
+// TESTIMONIAL PART JS START
+
+var swiper = new Swiper(".testimonialSwiper", {
+  loop: true,
+  spaceBetween: 24,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 16
+    },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 24
+    },
+
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    }
+
+  }
+});
+// TESTIMONIAL PART JS END
+
+// NAVIGATE PART JS START
+
+
+var swiper = new Swiper(".blogSwiper", {
+  loop: true,
+  spaceBetween: 0,
+
+  navigation: {
+    nextEl: ".blog-next",
+    prevEl: ".blog-prev",
+  },
+
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1200: { slidesPerView: 3 },
+  },
+});
+
+// NAVIGATE PART JS END
+
+
+// BRAND LOGO JS START
+
+// BRAND LOGO JS END
